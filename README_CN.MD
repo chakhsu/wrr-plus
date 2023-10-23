@@ -28,7 +28,9 @@
 
 ```
 npm install wrr-plus
+// or
 yarn add wrr-plus
+// or
 pnpm add wrr-plus
 ```
 

@@ -28,7 +28,9 @@ This module provides two types of weighted round-robin tables for load balancing
 
 ```
 npm install wrr-plus
+// or
 yarn add wrr-plus
+// or
 pnpm add wrr-plus
 ```
 
