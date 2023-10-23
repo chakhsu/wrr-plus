@@ -1,0 +1,43 @@
+{
+  "name": "wrr-plus",
+  "version": "1.0.0",
+  "description": "Weighted Round Robin Plus (加权轮训调度算法加强版)",
+  "author": "Chakhsu.Lau",
+  "license": "MIT",
+  "keywords": ["wrr", "Weighted Round Robin", "plus"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chakhsu/wrr-plus"
+  },
+  "homepage": "https://github.com/chakhsu/wrr-plus",
+  "bugs": {
+    "url": "https://github.com/chakhsu/wrr-plus/issues"
+  },
+  "main": "index.js",
+  "types": "./@types/index.d.ts",
+  "scripts": {
+    "test": "mocha --exit --extension .test.js --recursive test",
+    "fix": "standard --fix 'lib/**/*.js' 'test/**/*.js' | snazzy",
+    "lint": "standard -v 'lib/**/*.js' 'test/**/*.js' | snazzy",
+    "type-gen": "tsc -d --allowJs --outDir @types index.js"
+  },
+  "dependencies": {
+    "joi": "^17.11.0",
+    "lodash": "^4.17.21",
+    "mathjs": "^11.11.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.7",
+    "chai": "^4.3.10",
+    "husky": "^8.0.3",
+    "mocha": "^10.2.0",
+    "snazzy": "^9.0.0",
+    "standard": "^17.1.0",
+    "typescript": "^5.2.2"
+  },
+  "standard": {
+    "envs": [
+      "mocha"
+    ]
+  }
+}
