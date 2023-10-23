@@ -91,8 +91,6 @@ wrr.reset() // 重新初始化 wrr, 所有之前 add 过的 kv 节点都无效
 }
 ```
 
-### API
-
 ### 注意事项
 
 1. `getRoundRobin()` 中的 `options` 的优先级高于 `new WeightedRoundRobin(options)` 中的 `options`
