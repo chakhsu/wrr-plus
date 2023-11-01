@@ -1,5 +1,14 @@
 # Weighted Round Robin Plus (wrr-plus)
 
+<p align="left">
+  <a aria-label="NPM version" href="https://www.npmjs.com/package/wrr-plus">
+    <img alt="" src="https://badgen.net/npm/v/wrr-plus">
+  </a>
+  <a aria-label="License" href="https://github.com/chakhsu/wrr-plus/blob/main/LICENSE">
+    <img alt="" src="https://badgen.net/npm/license/wrr-plus">
+  </a>
+</p>
+
 [English](./README.MD) | [中文](./README_CN.MD)
 
 A Node.js module for load balancing based on the Weighted Round Robin (WRR) algorithm, implemented as a simulation of the Nginx WRR algorithm.
