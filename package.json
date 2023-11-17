@@ -1,6 +1,6 @@
 {
   "name": "wrr-plus",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Weighted Round Robin Plus (加权轮训调度算法加强版)",
   "author": "Chakhsu.Lau",
   "license": "MIT",
