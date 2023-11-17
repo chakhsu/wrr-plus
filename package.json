@@ -1,10 +1,14 @@
 {
   "name": "wrr-plus",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Weighted Round Robin Plus (加权轮训调度算法加强版)",
   "author": "Chakhsu.Lau",
   "license": "MIT",
-  "keywords": ["wrr", "Weighted Round Robin", "plus"],
+  "keywords": [
+    "wrr",
+    "Weighted Round Robin",
+    "plus"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/chakhsu/wrr-plus"
