@@ -20,11 +20,13 @@ Consider three nodes {a, b, c} with respective weights {a=5, b=1, c=1}. If we se
 **Nginx Weighted Round Robin Algorithm:**
 
 Conceptual explanation, where each node has three weight variables:
+
 1. `weight`: Defined weight, which is the weight assigned to each node in the configuration or initialization.
 2. `effectiveWeight`: Effective weight, initially set to `weight`.
 3. `currentWeight`: Current weight of the node, initially set to 0.
 
 Algorithm logic:
+
 1. Iterate through all nodes and calculate the sum of `effectiveWeight` for all nodes, which is `totalWeight`.
 2. `currentWeight = currentWeight + effectiveWeight`. Select the node with the highest `currentWeight` as the chosen node.
 3. `currentWeight` of the selected node is reduced by `totalWeight`.
@@ -48,7 +50,7 @@ pnpm add wrr-plus
 Example:
 
 ```
-const WeightedRoundRobin = require('wrr-plus')
+const { WeightedRoundRobin } = require('wrr-plus')
 const wrr = new WeightedRoundRobin({
   max: 200,
   min: 10

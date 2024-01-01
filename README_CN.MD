@@ -20,14 +20,16 @@
 **Nginx 加权轮询算法:**
 
 概念解释,每个节点有三个权重变量，分别是：
-  1. weight: 约定权重，即在配置文件或初始化时约定好的每个节点的权重;
-  2. effectiveWeight: 有效权重，初始化为 weight;
-  3. currentWeight: 节点当前权重，初始化为 0。
+
+1. weight: 约定权重，即在配置文件或初始化时约定好的每个节点的权重;
+2. effectiveWeight: 有效权重，初始化为 weight;
+3. currentWeight: 节点当前权重，初始化为 0。
 
 算法逻辑:
-  1. 轮询所有节点，计算当前状态下所有节点的 effectiveWeight 之和 totalWeight；
-  2. currentWeight = currentWeight + effectiveWeight;  选出所有节点中 currentWeight 中最大的一个节点作为选中节点；
-  3. 选中节点的 currentWeight = currentWeight - totalWeight。
+
+1. 轮询所有节点，计算当前状态下所有节点的 effectiveWeight 之和 totalWeight；
+2. currentWeight = currentWeight + effectiveWeight; 选出所有节点中 currentWeight 中最大的一个节点作为选中节点；
+3. 选中节点的 currentWeight = currentWeight - totalWeight。
 
 ### 模块说明
 
@@ -48,7 +50,7 @@ pnpm add wrr-plus
 Example:
 
 ```
-const WeightedRoundRobin = require('wrr-plus')
+const { WeightedRoundRobin } = require('wrr-plus')
 const wrr = new WeightedRoundRobin({
   max: 200,
   min: 10
