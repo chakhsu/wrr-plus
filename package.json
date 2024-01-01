@@ -44,12 +44,10 @@
     "test": "jest"
   },
   "dependencies": {
-    "debug": "^4.3.4",
     "joi": "^17.11.0",
     "mathjs": "^11.11.2"
   },
   "devDependencies": {
-    "@types/debug": "^4.1.12",
     "@types/jest": "^29.5.11",
     "@types/node": "^20.10.4",
     "husky": "^8.0.3",
