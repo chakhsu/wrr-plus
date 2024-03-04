@@ -13,7 +13,7 @@
 
 A Node.js module for load balancing based on the Weighted Round Robin (WRR) algorithm, implemented as a simulation of the Nginx WRR algorithm.
 
-### Principle Overview
+### Overview
 
 Consider three nodes {a, b, c} with respective weights {a=5, b=1, c=1}. If we send 7 requests, node a will be assigned 5 times, node b will be assigned once, and node c will also be assigned once.
 
@@ -31,11 +31,11 @@ Algorithm logic:
 2. `currentWeight = currentWeight + effectiveWeight`. Select the node with the highest `currentWeight` as the chosen node.
 3. `currentWeight` of the selected node is reduced by `totalWeight`.
 
-### Module Description
+### Description
 
 This module provides two types of weighted round-robin tables for load balancing. One is a forward order table, where nodes with higher weights receive more assignments. The other is a reverse order table, where nodes with lower weights receive more assignments.
 
-### Module Installation
+### Installation
 
 ```
 npm install wrr-plus
@@ -45,7 +45,7 @@ yarn add wrr-plus
 pnpm add wrr-plus
 ```
 
-### Usage Instructions
+### Usage
 
 Example:
 
