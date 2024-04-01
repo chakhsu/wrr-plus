@@ -10,7 +10,7 @@ dependencies:
     version: 17.12.2
   mathjs:
     specifier: ^12.4.0
-    version: 12.4.0
+    version: 12.4.1
 
 devDependencies:
   '@types/jest':
@@ -2291,8 +2291,8 @@ packages:
       tmpl: 1.0.5
     dev: true
 
-  /mathjs@12.4.0:
-    resolution: {integrity: sha512-4Moy0RNjwMSajEkGGxNUyMMC/CZAcl87WBopvNsJWB4E4EFebpTedr+0/rhqmnOSTH3Wu/3WfiWiw6mqiaHxVw==}
+  /mathjs@12.4.1:
+    resolution: {integrity: sha512-welnW3khgwYjPYvECFHO+xkCxAx9IKIIPDDWPi8B5rKAvmgoEHnQX9slEmHKZTNaJiE+OS4qrJJcB4sfDn/4sw==}
     engines: {node: '>= 18'}
     hasBin: true
     dependencies:
